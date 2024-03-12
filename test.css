@@ -1,0 +1,329 @@
+html{
+  background-color: #C0C5C1;
+}
+body{
+  background-color: #C0C5C1;
+}
+nav div>h1 {
+  text-align: center; /* Centre le titre horizontalement */
+  font-size: 60px; /* Définit la taille du texte du titre en pixels */
+  color: #F2F2F2; /* Définit la couleur du texte du titre en utilisant un code hexadécimal */
+}
+
+.menu>a{
+  text-decoration: none; /*eviter le trait sous dans le menu*/
+  color: #F2F2F2; /*couleur des mots dans le menu*/
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 15px 15px 15px;
+  font-size: 14px;
+  background-color: #2A5159;
+  /* font-family: 'arial'; */
+  border-radius: 10px;
+  margin-top: 2%; /* Ajoute de l'espace au-dessus du menu */  
+}
+
+body>div{
+  margin: 7%;/*met de la marge de chaque côté du carré vert central (à l'extérieur)*/
+}
+
+body>div>div{
+  padding: 5%;/*met de la marge de chaque côté du carré vert central (à l'intérieur)*/
+  background-color: #2A5159;
+  overflow-wrap: break-word;
+  border-radius: 10px;
+}
+
+.menu>h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.menu>a {
+  display: inline-block;
+  padding: 1em 3.5em;
+  background-color: var(--color);
+  color: #F2F2F2;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-size: .875rem;
+}
+
+body>div{
+  margin: 7%;
+}
+
+body>div>div{
+  padding: 5%;
+  background-color: #2A5159;
+  overflow-wrap: break-word;
+  border-radius: 10px;
+}
+/*Au dessus de se commentaire cela ne doit pas changer*/
+
+/*Grand titre Safran*/
+.liste-etude h2 {
+  padding-top: 10%;
+  padding-bottom: 3%;
+  height: 10%; /* Définit une hauteur fixe pour le titre */
+  font-weight: 700;
+  font-size: 300%;
+  text-align: center;
+  color:#F2F2F2;
+}
+
+/*Description de Safran*/
+.liste-etude>p{
+  text-align: center;
+}
+
+/*"bouton" vers le site Safran*/
+.liste-etude a {  
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  margin-bottom: 10%; /* Ajoutez l'espace souhaité en pixels ou toute autre unité de mesure */
+  display: flex;
+  color: #F2F2F2;
+  text-decoration: none; /* il  n'y pas le texte souligné*/
+  text-transform: uppercase; /* donne une écriture spécial à "site officiel" */
+  font-weight: 700; /* ajoute du gras au mot "site officiel"*/
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+  padding: 2%;
+}  
+
+/*Titre : Les 12 sociétés Safran*/
+h3{
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 30px;
+  color: #F2F2F2;
+}
+
+/*Div général qui controle les 12 sociétés Safran*/
+.safran {
+  vertical-align: middle;
+  margin: auto; /*marge autour du carde (à l'extérieur)*/
+  /* display: flex; */
+  max-width: 85%;
+  height: auto;
+  background-color: var(--darkblue);
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/*Sous div de .safran pour les 12 sociétés*/
+.groupe {
+  border: 2px solid #C0C5C1;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  height: 13%;
+  width: 15%; /* Ajoutez cette ligne pour définir une largeur en pourçentage */
+  margin-top: 1%; /* Espace entre la ligne du bas et la du haut*/
+}
+
+/*Ecriture dans les encadrer des 12 sociétés*/
+.groupe>p {
+  /* width: 100%; */
+  color:#C0C5C1;
+  padding: 2%; /*espace autour du texte */
+  margin-bottom: 5%;
+}
+
+/*Div présentation général de toute les div en dessous de la carte*/
+.général {
+  border: 2px solid #C0C5C1;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  height: 13%;
+  width: 27%; /* Ajoutez cette ligne pour définir une largeur en pourçentage */
+  margin-top: 1%; /* Espace entre la ligne du bas et la du haut*/
+}
+
+/*Div présentation général avec contenair image*/
+.général>img {
+  padding-top: 5%;
+  width: 60%; /* Largeur souhaitée pour toutes les images */
+  height: auto; /* Hauteur souhaitée pour toutes les images */
+  object-fit: cover; /* Contrôle le dimensionnement de l'image tout en préservant les proportions */
+}
+
+
+
+.général>ul{
+  list-style: none; /* Masque les puces par défaut */
+}
+.général>ul ::before {
+  content: '✈️';
+}
+
+.acceuil>h3{
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 30px;
+  color: #F2F2F2;
+}
+
+.acceuil p {
+  text-align: center;
+  color:#F2F2F2;
+}
+
+.liste-etude {
+  text-align: center;
+  margin: auto; /*marge autour du carde (à l'extérieur)*/
+  display: flex;
+  flex-direction: column;
+  /* width: 90vw; */
+  max-width: 85%;
+  /* height: auto; */
+  background-color: var(--darkblue);
+  color: #F2F2F2;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+  /* cursor: pointer;
+  transition: 0.3s; */
+}
+
+.image {
+  margin: auto; 
+  display: flex;
+  max-width: 85%;
+  background-color: var(--darkblue);
+  color: #F2F2F2;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.image img {
+  margin-right: 20px;
+  height: auto;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.image p {
+  text-align: center;
+  width: 40%;
+  height: 30%;
+  border-radius: 10px;  
+  color: #C0C5C1
+}
+
+.collaboratrice {
+  border: 2px solid #C0C5C1;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  min-height: 100%;
+  height: 20vh;
+  width: 27%; /* Ajoutez cette ligne pour définir une largeur en pourçentage */
+  margin-top: 1%; /* Espace entre la ligne du bas et la du haut*/
+}
+
+/*Div présentation général avec contenair image*/
+.collaboratrice>img {
+  padding-top: 5%;
+  width: 70%; /* Largeur souhaitée pour toutes les images */
+  height: auto; /* Hauteur souhaitée pour toutes les images */
+  object-fit: cover; /* Contrôle le dimensionnement de l'image tout en préservant les proportions */
+}
+
+.entreprise-collaboratrice {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.entreprise-collaboratrice>img{
+  text-align: center;
+  margin-right: 20px;
+  height: auto;
+  width: 20%; /* Réduit la largeur de l'image à 50% de sa taille d'origine */
+  border-radius: 10px;
+}
+
+.organigramme>img{
+  width: 10%; /* Largeur souhaitée pour toutes les images */
+
+}
+
+
+
+.outil {
+  border: 2px solid #C0C5C1;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  min-height: 100%;
+  height: 25vh;
+  width: 27%; /* Ajoutez cette ligne pour définir une largeur en pourçentage */
+  margin-top: 1%; /* Espace entre la ligne du bas et la du haut*/
+}
+
+/*Div présentation général avec contenair image*/
+.outil>img {
+  padding-top: 5%;
+  width: 60%; /* Largeur souhaitée pour toutes les images */
+  height: auto; /* Hauteur souhaitée pour toutes les images */
+  object-fit: cover; /* Contrôle le dimensionnement de l'image tout en préservant les proportions */
+}
+
+.outils-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.teste {
+  border: 2px solid #C0C5C1;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  height: 13%;
+  width: 27%; /* Ajoutez cette ligne pour définir une largeur en pourçentage */
+  margin-top: 1%; /* Espace entre la ligne du bas et la du haut*/
+}
+
+/*Div présentation général avec contenair image*/
+.teste>img {
+  padding-top: 5%;
+  width: 60%; /* Largeur souhaitée pour toutes les images */
+  height: auto; /* Hauteur souhaitée pour toutes les images */
+  object-fit: cover; /* Contrôle le dimensionnement de l'image tout en préservant les proportions */
+}

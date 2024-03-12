@@ -1,0 +1,126 @@
+/* @import url('https://fonts.google.com/specimen/Bebas+Neue'); */
+html{
+    background-color: #C0C5C1;
+}
+body{
+    background-color: #C0C5C1;
+}
+nav div>h1 {
+    text-align: center; /* Centre le titre horizontalement */
+    font-size: 60px; /* Définit la taille du texte du titre en pixels */
+    color: #F2F2F2; /* Définit la couleur du texte du titre en utilisant un code hexadécimal */
+}
+
+.menu>a{
+    text-decoration: none; /*eviter le trait sous dans le menu*/
+    color: #F2F2F2; /*couleur des mots dans le menu*/
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 15px 15px 15px;
+    font-size: 14px;
+    background-color: #2A5159;
+    /* font-family: 'arial'; */
+    border-radius: 10px;
+    margin-top: 2%; /* Ajoute de l'espace au-dessus du menu */  
+}
+
+body>div{
+    margin: 7%;/*met de la marge de chaque côté du carré vert central (à l'extérieur)*/
+}
+
+body>div>div{
+    padding: 5%;/*met de la marge de chaque côté du carré vert central (à l'intérieur)*/
+    background-color: #2A5159;
+    overflow-wrap: break-word;
+    border-radius: 10px;
+}
+
+.menu>h1 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.menu>a {
+    display: inline-block;
+    padding: 1em 3.5em;
+    background-color: var(--color);
+    color: #F2F2F2;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0.3em;
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-size: .875rem;
+}
+body>div{
+    margin: 7%;
+    
+}
+
+body>div>div{
+    padding: 5%;
+    background-color: #2A5159;
+    overflow-wrap: break-word;
+    border-radius: 10px;
+    height: 5000px;
+}
+
+/*Mon bilan*/
+h2{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #F2F2F2;
+}
+
+/*vingt-deux*/
+/* Nouveau style pour les divs avec la classe "vingt-deux" */
+/* Styles pour les divs avec la classe "vingt-deux" */
+.vingt-deux {
+    border: 2px solid #C0C5C1;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+    float: left;
+    margin-right: 20px;
+}
+
+/* Réglages pour les titres h3 à l'intérieur des divs vingt-deux */
+.vingt-deux h4 {
+    color: #C0C5C1;
+    font-size: 18px; /* Réduire la taille du titre */
+    text-align: center; /* Centrer le texte */
+    margin-top: 0; /* Supprimer la marge supérieure */
+    margin-bottom: 10px; /* Ajouter une marge inférieure */
+}
+
+/* Réglages pour les divs avec la classe "vingt-deux" en responsive */
+@media (max-width: 768px) {
+    .vingt-deux {
+        width: calc(100% - 40px); /* Largeur de 100% moins les marges internes */
+        float: none; /* Annuler le flottement */
+        margin-right: auto; /* Réinitialiser la marge à automatique sur le côté droit */
+        margin-left: auto; /* Centrer horizontalement en ajoutant une marge automatique sur le côté gauche */
+        margin-bottom: 20px; /* Ajouter une marge inférieure */
+    }
+}
+
+h3{
+    color:#C0C5C1;
+    /* text-decoration: underline; */
+    font-size: 20px; /* Taille du titre à 20 pixels */
+}
+
+/* Réglages pour les écrans de petite taille */
+@media (max-width: 768px) {
+    h3 {
+      text-align: center; /* Centrer le texte horizontalement */
+    }
+  }

@@ -1,0 +1,529 @@
+/* @import url('https://fonts.google.com/specimen/Bebas+Neue'); */
+html{
+  background-color: #C0C5C1;
+}
+body{
+  background-color: #C0C5C1;
+}
+nav div>h1 {
+  text-align: center; /* Centre le titre horizontalement */
+  font-size: 60px; /* Définit la taille du texte du titre en pixels */
+  color: #F2F2F2; /* Définit la couleur du texte du titre en utilisant un code hexadécimal */
+}
+
+.menu>a{
+  text-decoration: none; /*eviter le trait sous dans le menu*/
+  color: #F2F2F2; /*couleur des mots dans le menu*/
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 15px 15px 15px;
+  font-size: 14px;
+  background-color: #2A5159;
+  /* font-family: 'arial'; */
+  border-radius: 10px;
+  margin-top: 2%; /* Ajoute de l'espace au-dessus du menu */  
+}
+
+body>div{
+  margin: 7%;/*met de la marge de chaque côté du carré vert central (à l'extérieur)*/
+}
+
+body>div>div{
+  padding: 5%;/*met de la marge de chaque côté du carré vert central (à l'intérieur)*/
+  background-color: #2A5159;
+  overflow-wrap: break-word;
+  border-radius: 10px;
+}
+
+.menu>h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.menu>a {
+  display: inline-block;
+  padding: 1em 3.5em;
+  background-color: var(--color);
+  color: #F2F2F2;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-size: .875rem;
+}
+body>div{
+  margin: 7%;
+}
+
+body>div>div{
+  padding: 5%;
+  background-color: #2A5159;
+  overflow-wrap: break-word;
+  border-radius: 10px;
+}
+/*parti présentation*/
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid #C0C5C1;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.content img {
+  max-width: 50%; /* Réduire la taille de l'image */
+  height: auto;
+  margin-bottom: 10px; /* Ajouter un peu d'espace sous l'image */
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin: 0; /* Supprimer les marges par défaut */
+}
+
+.content li {
+  margin-bottom: 5px; /* Réduire l'écart entre les éléments de la liste */
+}
+
+@media only screen and (min-width: 768px) {
+  .content {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .content img {
+    max-width: 30%; /* Réduire davantage la taille de l'image */
+    margin-right: 10px; /* Ajouter un espace entre l'image et la liste */
+    margin-bottom: 0; /* Supprimer l'espace sous l'image */
+  }
+
+  .content ul {
+    text-align: left;
+    margin: 0; /* Réinitialiser les marges de la liste */
+  }
+}
+
+
+
+
+
+
+
+
+h2{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #F2F2F2;
+  /* background-color: #F2F2F2;
+  font-family: 'arial';
+  border-radius: 30px; */
+}
+
+/*nav*/
+nav div>ul{
+  display : none;
+  /* list-style-type : none; */
+  /* background-color : #555 */
+}
+
+nav input [type=checkbox]:checked + ul{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.conteneur-nav{
+  position: absolute;
+  width: 100%;
+}
+
+.sous{
+  display: flex;
+  flex-flow: column wrap;
+  z-index: 1000;
+}
+
+.sous li {
+  flex: 1 1 auto;
+  text-align: left ;
+}
+
+.sous a {
+  padding: 10px;
+  border-bottom: none;
+  background-color: RGBa(200,200,200, 0,8);
+}
+
+.proffesion{
+  /* margin-right: 20px; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  width: 100%;
+  /* background-color: #F2E0C9; */
+}
+
+.proffesion img {
+  width: 500px;
+  height: 400px;
+  border: 2px solid #C0C5C1; /* Trait autour de la carte */
+  border-radius: 10px;  
+}
+
+.card-image img{
+  margin-right: 10px; /* Ajoute de l'espace en bas de chaque élément */
+}
+
+div.paragraphe {
+  column-count: 2; /* Divise le paragraphe en deux colonnes */
+  column-gap: 20px; /* Espacement entre les colonnes (facultatif) */
+
+}
+
+
+
+/*etude*/
+.liste-etudes {
+  margin: auto; /*marge autour du carde (à l'extérieur)*/
+  display: flex;
+  flex-direction: column;
+  /* width: 90vw; */
+  max-width: 85%;
+  /* height: auto; */
+  background-color: var(--darkblue);
+  color: #F2F2F2;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+  /* cursor: pointer;
+  transition: 0.3s; */
+}
+
+.etude {
+  position: relative;
+  margin: 2% auto;
+  display: flex;
+  width: 100%;
+}
+
+.emoji {
+  font-size: 50px; /* Taille de l'emoji */
+  margin-top: 5%;
+  margin-right: 10px; /* Espace entre l'emoji et le texte */
+  vertical-align: middle; /* Alignement vertical au centre */
+}
+
+@media only screen and (max-width: 768px) {
+  .emoji {
+    display: none; /* Cache l'emoji sur les écrans de 768 pixels de largeur ou moins */
+  }
+}
+
+h5{
+  font-size: 150%;
+  font-weight: bold; /* Mettre en gras le texte avec la valeur "bold" */
+}
+
+@media only screen and (max-width: 768px) {
+  h5 {
+    text-align: center; /* Centrer le texte sur les écrans de 768 pixels de largeur ou moins */
+    padding:2%;
+  }
+
+  .titre-etude {
+    font-size: 90%; /* Réduire la taille de la police en mode responsive */
+    border: 2px solid white; /* Ajouter un encadrement blanc en mode responsive */
+    border-radius: 5px;
+  }
+
+  .etude {
+    flex-direction: column; /* Empile les éléments les uns sur les autres en mode responsive */
+    align-items: center; /* Centre les éléments horizontalement en mode responsive */
+  }
+
+  .desc-etude,
+  .date-etude {
+    text-align: center; /* Centre le texte horizontalement en mode responsive */
+  }
+
+  .date-etude {
+    font-weight: bold; /* Mettre le texte en gras */
+    font-size: 120%; /* Agrandir la taille de police */
+  }
+}
+
+.left {
+  float: left; /* Fait flotter les div "left" à gauche */
+  width: 10%; /* Divise la largeur en deux colonnes */
+  box-sizing: border-box; /* Inclut la largeur du padding dans la largeur totale */
+}
+
+.right {
+  display: block; /* Empile les div "right" les unes sous les autres */
+  width: 90%; /* Divise la largeur en deux colonnes */
+  box-sizing: border-box; /* Inclut la largeur du padding dans la largeur totale */
+}
+
+/*centre intérêt*/
+.centre-interet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end; /* Alignement des éléments au bas de la div */
+}
+
+.interet {
+  display: inline-block;
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  border: 2px solid #C0C5C1;
+  border-radius: 5px;
+  padding: 1%;
+  border-bottom: 10%;
+  width: 40%;
+  margin: 10px; /* Espace entre les éléments */  height: 150px; /* Hauteur fixe pour tous les encadrements */
+  flex: 0 0 calc(25% - 20px); /* Pour 4 éléments par ligne */
+  margin: 10px; /* Espace entre les éléments */
+  text-align: center; /* Alignement du texte au centre */
+}
+
+.interet>p {
+  color: #C0C5C1;
+  padding: 2%;
+  margin-bottom: 5%;
+  align-self: flex-start; /* Alignement du texte en haut de chaque div */
+}
+
+
+.interet>a {
+  display: inline-block;
+  background-color: #C0C5C1;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 3%;
+}
+
+.interet>a:hover {
+  background-color: #C0C5C1;
+}
+
+.interet>img {
+  width: 60%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  .centre-interet {
+    text-align: center; /* Centrer les éléments en mode responsive */
+  }
+
+  .interet {
+    height: 150px; /* Hauteur fixe pour tous les encadrements en mode responsive */
+    width: 45%;
+    margin: 2% auto; /* Espacement entre les éléments en mode responsive */
+    display: inline-block; /* Afficher les éléments en ligne en mode responsive */
+    vertical-align: top; /* Aligner les éléments en haut de la ligne en mode responsive */
+    flex-basis: calc(50% - 20px); /* Pour 2 éléments par ligne en mode responsive */
+  }
+}
+
+
+
+
+
+
+
+/*mooc*/
+.mooc {
+  text-align: center;
+  display:flex;
+}
+
+.livret {
+  position: relative;
+  border: 2px solid #C0C5C1;
+  border-radius: 5px;
+  padding: 1%;
+  border-bottom: 10%;
+  text-align: center; 
+  width: calc(25% - 4%);
+  margin: 2% 1%;
+  display: inline-block;
+  vertical-align: top;
+  height: 220px;
+  display: flex; /* Utiliser flexbox à l'intérieur de chaque div */
+  flex-direction: column; /* Aligner les éléments en colonne */
+  align-items: flex-end; /* Aligner les éléments au bas de chaque div */
+  margin-right: 10px; /* Ajouter une marge entre les divs */
+}
+
+.livret>a {
+  display: inline-block;
+  background-color: #C0C5C1;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 3%;
+  line-height: 40px;
+  width: calc(100% - 6%);
+  margin-right: 2%;
+  margin-bottom: 5px; /* Réduire l'espace en bas des liens en mode responsive */
+  height: 34px; /* Ajuster la hauteur des liens */
+  line-height: 25px; /* Ajuster la hauteur de ligne des liens */
+  vertical-align: middle; /* Aligner les éléments au milieu */
+}
+
+
+.livret>a:last-child {
+  margin-right: 0;
+}
+
+.livret>a:hover {
+  background-color: #C0C5C1;
+}
+
+.livret > p {
+  color: #C0C5C1;
+  padding: 2%;
+  margin-bottom: 5%;
+  align-items: center;
+  text-align: center; /* Centrer le texte */
+}
+
+.livret>img {
+  width: 60%;
+  height: auto;
+  object-fit: cover;
+  margin: auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .mooc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .livret {
+    width: calc(50% - 4%);
+    margin: 2% 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .livret>a {
+    margin-bottom: 5px; /* Réduire l'espace en bas des liens en mode responsive */
+    height: 30px; /* Ajuster la hauteur des liens */
+    line-height: 25px; /* Ajuster la hauteur de ligne des liens */
+  }
+}
+
+
+
+
+
+
+
+
+/*language*/
+.langage-informatique {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.langage-informatique .groupe {
+  position: relative;
+  border: 2px solid #C0C5C1;
+  border-radius: 5px;
+  padding: 1%;
+  border-bottom: 10%;
+  text-align: center;
+  width: 45%;
+  height: 290px;
+  margin: 2% 1%;
+  /* padding: 5%; */
+  display: flex; /* Ajouter l'affichage flex pour aligner les éléments verticalement */
+  flex-direction: column; /* Aligner les éléments dans une colonne */
+  justify-content: center; /* Centrer verticalement les éléments */
+  align-items: center; /* Centrer horizontalement les éléments */
+}
+
+.langage-informatique .groupe>p {
+  color: #C0C5C1;
+  padding: 2%;
+  margin-bottom: 5%;
+}
+
+.langage-informatique .groupe>a {
+  display: inline-block;
+  background-color: #C0C5C1;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 3%;
+}
+
+.langage-informatique .groupe>a:hover {
+  background-color: #C0C5C1;
+}
+
+.langage-informatique .groupe>img {
+  width: 60%;
+  height: auto;
+  object-fit: cover;
+}
+
+.progress-container {
+  width: calc(100% - 20px); /* Utilisez calc() pour déduire l'espace de 20px des côtés */
+  background-color: #C0C5C1;
+  min-height: 20px;
+  border-radius: 5px;
+  margin: 5px auto; /* Ajoutez une marge autour de l'encadrement */
+}
+
+
+.progress-bar {
+  width: 0;
+  height: 100%;
+  background-color: #0074D9;
+  border-radius: 5px;
+  transition: width 0.5s ease;
+}
+
+.progress-text {
+  text-align: center;
+  line-height: 20px; /* Hauteur fixe pour aligner les pourcentages */
+  color: #C0C5C1;
+  font-weight: bold;
+  margin-top: 5px; /* Ajoutez une marge en haut pour l'espace */
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  .langage-informatique .groupe {
+    width: 22%;
+    margin: 2% 1%;
+  }
+}

@@ -1,0 +1,198 @@
+/* @import url('https://fonts.google.com/specimen/Bebas+Neue'); */
+html{
+    background-color: #C0C5C1;
+}
+body{
+    background-color: #C0C5C1;
+}
+nav div>h1 {
+    text-align: center; /* Centre le titre horizontalement */
+    font-size: 60px; /* Définit la taille du texte du titre en pixels */
+    color: #F2F2F2; /* Définit la couleur du texte du titre en utilisant un code hexadécimal */
+}
+    
+.menu>a{
+  text-decoration: none; /*eviter le trait sous dans le menu*/
+  color: #F2F2F2; /*couleur des mots dans le menu*/
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 15px 15px 15px;
+  font-size: 14px;
+  background-color: #2A5159;
+  /* font-family: 'arial'; */
+  border-radius: 10px;
+  margin-top: 2%; /* Ajoute de l'espace au-dessus du menu */  
+}
+
+body>div{
+  margin: 7%;/*met de la marge de chaque côté du carré vert central (à l'extérieur)*/
+}
+
+body>div>div{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;/*met de la marge de chaque côté du carré vert central (à l'intérieur)*/
+  background-color: #2A5159;
+  overflow-wrap: break-word;
+  border-radius: 10px;
+}
+
+.menu>a{
+    text-decoration: none; /*eviter le trait sous dans le menu*/
+    color: #F2F2F2; /*couleur des mots dans le menu*/
+}
+
+.menu {
+display: flex; /*permet de mettre les éléments en ligne et pas l'un en dessous de l'autre*/
+align-items: center; /*centrer les élément du menu*/
+padding: 2px 15px 15px 15px;
+font-size: 14px;
+background-color: #2A5159;
+/* font-family: 'arial'; */
+border-radius: 10px;
+margin-top: 2%; /* Ajoute de l'espace au-dessus du menu */  
+}
+
+body>div{
+margin: 7%;/*met de la marge de chaque côté du carré vert central (à l'extérieur)*/
+}
+
+
+.menu>h1 {
+font-weight: 700;
+font-size: 3rem;
+}
+
+.menu>a {
+display: inline-block;
+padding: 1em 3.5em;
+background-color: var(--color);
+color: #F2F2F2;
+text-decoration: none;
+text-transform: uppercase;
+border-radius: 0.3em;
+font-weight: 700;
+letter-spacing: .5px;
+font-size: .875rem;
+}
+
+body>div{
+    margin: 7%;
+}
+    
+body>div>div{
+    padding: 5%;
+    background-color: #2A5159;
+    overflow-wrap: break-word;
+    border-radius: 10px;
+}
+
+div>div>h2{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #F2F2F2;
+    /* background-color: #F2F2F2;
+    font-family: 'arial';
+    border-radius: 30px; */
+}
+
+.quoi>h3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #F2F2F2;
+}
+
+.quoi>p{
+    color: #C0C5C1;
+    
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*teste article*/
+
+.page-container {
+    text-align: center;
+}
+
+.article-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.article {
+    width: calc(40% - 20px); /* Ajustez la largeur selon vos besoins */
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+}
+
+.article-content {
+    text-align: center;
+}
+
+.article-image {
+    border-radius: 50%;
+    max-width: 150px; /* Ajustez la largeur selon vos besoins */
+    margin-bottom: 10px;
+    margin: 0 auto; /* Centre l'image */
+}
+
+.article-info {
+    text-align: center;
+    color:#C0C5C1;
+}
+
+.horizontal-line {
+    border-top: 1px solid #ccc;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.article-summary,
+.your-opinion {
+    text-align: center;
+    color:#C0C5C1;
+
+}
+
+/* Ajout du style pour centrer le cadre autour de l'image */
+.article::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+/*bouton*/
+
+select {
+    /* Ajoutez ici vos styles personnalisés */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Media query pour les écrans plus petits (par exemple, les écrans de largeur maximale de 768 pixels) */
+@media screen and (max-width: 768px) {
+    .article {
+        width: 100%; /* Met les articles à 100% de largeur sur des écrans plus petits */
+    }
+}
+

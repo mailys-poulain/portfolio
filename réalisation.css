@@ -1,0 +1,543 @@
+html{
+  background-color: #C0C5C1; /*couleur de fonc au dessus du menu*/
+}
+body{
+  background-color: #C0C5C1; /*couleur de fond sur le reste de la page*/
+}
+nav div>h1 {
+  text-align: center; /* Centre le titre horizontalement */
+  font-size: 60px; /* Définit la taille du texte du titre en pixels */
+  color: #F2F2F2; /* Définit la couleur du texte du titre en utilisant un code hexadécimal */
+}
+
+.menu>a{
+  text-decoration: none; /*eviter le trait sous dans le menu*/
+  color: #F2F2F2; /*couleur des mots dans le menu*/
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 15px 15px 15px;
+  font-size: 14px;
+  background-color: #2A5159;
+  /* font-family: 'arial'; */
+  border-radius: 10px;
+  margin-top: 2%; /* Ajoute de l'espace au-dessus du menu */  
+}
+
+body>div{
+  margin: 7%;/*met de la marge de chaque côté du carré vert central (à l'extérieur)*/
+}
+
+body>div>div{
+  padding: 5%;/*met de la marge de chaque côté du carré vert central (à l'intérieur)*/
+  background-color: #2A5159;
+  overflow-wrap: break-word;
+  border-radius: 10px;
+}
+
+.menu>h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.menu>a {
+  display: inline-block;
+  padding: 1em 3.5em;
+  background-color: var(--color);
+  color: #F2F2F2;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-size: .875rem;
+}
+
+.présentation-projet>h2 {
+  color:#C0C5C1;
+}
+
+/*h2*/
+h2{
+  text-decoration: underline;
+  margin-top: 4%;
+}
+
+@media only screen and (max-width: 768px) {
+  h2 {
+    text-align: center;
+  }
+}
+
+
+p {
+  /* width: 100%; */
+  color:#C0C5C1;
+  padding: 2%; /*espace autour du texte */
+  margin-bottom: 5%;
+}
+/*h3*/
+h3{
+  color:#C0C5C1;
+  /* text-decoration: underline; */
+  font-size: 20px; /* Taille du titre à 20 pixels */
+}
+
+
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/*h4*/
+h4{
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  color:#C0C5C1;
+  border: 1px solid #C0C5C1;
+  margin-left:40%;
+  padding: 2px;
+  width: 20%;
+}
+
+@media only screen and (max-width: 768px) {
+  h4 {
+    text-align: center; /* Centrer le texte */
+    width: 50%;
+    height: 8%;
+    margin-left:80px;
+    margin-top: 30%;
+    }
+
+
+}
+
+
+
+/* 
+.contenu {
+  display: flex;
+  vertical-align: middle;
+  position: relative;
+  margin: 0px auto;
+  overflow: hidden;
+} */
+
+/* Lorsque la case à cocher est cochée, affiche le contenu */
+/* input[type="checkbox"]:checked ~ .contenu {
+  display: inline-block;
+} */
+
+/*.marvel, .rugby, .minijeu, .redmine, .kpi, .redmine2*/
+@media only screen and (max-width: 768px) {
+  .marvel {
+    width: 250%; /* Définir une largeur de 80% de la largeur de l'écran */
+    height: 27%;
+    max-width: 600px; /* Définir une largeur maximale */
+    margin: 0; /* Supprimer les marges */
+    padding-left: 80px; /* Ajouter un padding à gauche pour espacer de l'écran */
+    text-align: left; /* Aligner le contenu à gauche */
+    padding-bottom: 0%;
+    margin-bottom: -150px; /* Ajuster cette valeur selon vos besoins */
+  }
+  .rugby {
+    width: 300%; /* Définir une largeur de 80% de la largeur de l'écran */
+    height: 33%;
+    max-width: 600px; /* Définir une largeur maximale */
+    margin: 0; /* Supprimer les marges */
+    padding-left: 80px; /* Ajouter un padding à gauche pour espacer de l'écran */
+    text-align: left; /* Aligner le contenu à gauche */
+    margin-bottom: -200px; /* Ajuster cette valeur selon vos besoins */
+  }
+  .minijeu {
+    width: 250%; /* Définir une largeur de 80% de la largeur de l'écran */
+    height: 30%;
+    max-width: 600px; /* Définir une largeur maximale */
+    margin: 0; /* Supprimer les marges */
+    padding-left: 80px; /* Ajouter un padding à gauche pour espacer de l'écran */
+    text-align: left; /* Aligner le contenu à gauche */
+    margin-bottom: -190px; /* Ajuster cette valeur selon vos besoins */
+  }
+  .redmine {
+    width: 250%; /* Définir une largeur de 80% de la largeur de l'écran */
+    height: 100px;
+    max-width: 900px; /* Définir une largeur maximale */
+    margin: 0; /* Supprimer les marges */
+    padding-left: 65px; /* Ajouter un padding à gauche pour espacer de l'écran */
+    text-align: left; /* Aligner le contenu à gauche */
+    margin-bottom: -350px; /* Ajuster cette valeur selon vos besoins */
+  }
+  .redmine2 {
+    width: 250%; /* Définir une largeur de 80% de la largeur de l'écran */
+    height: 600px;
+    max-width: 900px; /* Définir une largeur maximale */
+    margin: 0; /* Supprimer les marges */
+    padding-left: 65px; /* Ajouter un padding à gauche pour espacer de l'écran */
+    text-align: left; /* Aligner le contenu à gauche */
+    margin-bottom: -350px; /* Ajuster cette valeur selon vos besoins */
+  }
+  .KPI {
+    width: 250%; /* Définir une largeur de 80% de la largeur de l'écran */
+    height: 500px;
+    max-width: 900px; /* Définir une largeur maximale */
+    margin: 0; /* Supprimer les marges */
+    padding-left: 65px; /* Ajouter un padding à gauche pour espacer de l'écran */
+    text-align: left; /* Aligner le contenu à gauche */
+    margin-bottom: 0px; /* Ajuster cette valeur selon vos besoins */
+  }
+}
+
+/*projet ecole*/
+.marvel,
+.rugby,
+.minijeu,
+.myeasyline {
+  flex: 1;
+  margin-right: 10px;
+  padding-left: 90px;
+}
+
+.marvel label{
+  border: 2px solid #C0C5C1; /* Couleur et style de la bordure */
+  border-radius: 5px; /* Pour arrondir les coins */
+  padding-bottom: 5px; /* Ajoute un peu d'espace autour du texte */
+}
+.minijeu label{
+  border: 2px solid #C0C5C1; /* Couleur et style de la bordure */
+  border-radius: 5px; /* Pour arrondir les coins */
+  padding: 5px; /* Ajoute un peu d'espace autour du texte */
+}
+.rugby label {
+  border: 2px solid #C0C5C1; /* Couleur et style de la bordure */
+  border-radius: 5px; /* Pour arrondir les coins */
+  padding: 5px; /* Ajoute un peu d'espace autour du texte */
+}
+.myeasyline label {
+  border: 2px solid #C0C5C1; /* Couleur et style de la bordure */
+  border-radius: 5px; /* Pour arrondir les coins */
+  padding: 5px; /* Ajoute un peu d'espace autour du texte */
+}
+
+.redmine label{
+  border: 2px solid #C0C5C1;
+  border-radius: 5px;
+  padding: 1%;
+  margin: 0.5%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  /* height: 50%;  */
+  width: 20%; 
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.redmine label img {
+  width: 50%; 
+  height: auto;
+}
+
+.redmine2 label{
+  border: 2px solid #C0C5C1;
+  border-radius: 5px;
+  padding: 1%;
+  margin: 0.5%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  /* height: 60%;  */
+  width: 20%; 
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.redmine2 label img {
+  width: 50%; 
+  height: auto;
+}
+
+.KPI label{
+  border: 2px solid #C0C5C1;
+  border-radius: 5px;
+  padding: 1%;
+  margin: 0.5%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  /* height: 60%;  */
+  width: 20%; 
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.KPI label img {
+  width: 50%; 
+  height: auto;
+}
+
+
+.slide {
+  border: 2px solid #C0C5C1;
+  border-radius: 5px;
+  padding: 1%;
+  margin: 0.5%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  height: 50%;
+  width: 20%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.slide>img {
+  width: 50%;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .okay{
+    display: block;
+  }
+  .slide {
+    width: 90%;
+    margin: 20px auto;
+    border: 2px solid #C0C5C1;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .slide>img {
+    width: 50%;
+    height: auto;
+  }
+
+  input[type="checkbox"]:checked~.contenu {
+    display: block;
+  }
+
+  .titre {
+    cursor: pointer;
+    color: blue;
+  }
+
+  input[type="checkbox"]:checked~.slide {
+    margin-bottom: 200px;
+  }
+}
+
+/*général pour la page*/
+.ok {
+  display: flex;
+}
+
+.contenu {
+  display: none;
+}
+
+
+
+
+
+.slide>img {
+  width: 50%;
+  height: auto;
+}
+
+
+
+input[type="checkbox"]:checked~.contenu {
+  display: block;
+}
+
+.titre {
+  cursor: pointer;
+  color: blue;
+}
+
+@media only screen and (max-width: 768px) {
+  .ok{
+    display: block;
+  }
+  .slide {
+    width: 90%;
+    margin: 20px auto;
+    border: 2px solid #C0C5C1;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .slide>img {
+    width: 50%;
+    height: auto;
+  }
+
+  .contenu {
+    display: none;
+    margin-top: 10px;
+    width: 100%;
+    background-color: white;
+    border: 2px solid #C0C5C1;
+    border-top: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    z-index: 2;
+  }
+
+  input[type="checkbox"]:checked~.contenu {
+    display: block;
+  }
+
+  .titre {
+    cursor: pointer;
+    color: blue;
+  }
+
+  input[type="checkbox"]:checked~.slide {
+    margin-bottom: 200px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Lorsque la case à cocher est cochée, affiche le contenu */
+input[type="checkbox"]:checked ~ .contenu {
+display: block;
+}
+
+/* Style pour le titre cliquable */
+.titre {
+cursor: pointer;
+color: blue;
+}
+
+.slide-realisation {
+  border: 2px solid #C0C5C1;
+  border-radius: 5px;
+  /* width: 25%; */ /* Commentez ou supprimez cette ligne */
+  padding: 1%;
+  margin: 0.5%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  height: 13%; 
+  width: 20%; /* Ajoutez cette ligne pour définir une largeur en pourçentage*/
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+
+
+.ok{
+  display:block;
+}
+
+.slide-realisation2 {
+  border: 2px solid #C0C5C1;
+  border-radius: 5px;
+  /* width: 25%; */ /* Commentez ou supprimez cette ligne */
+  /* padding: 1%; */
+  margin: 0.5%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  height: 19%; 
+  width: 20%; /* Ajoutez cette ligne pour définir une largeur en pourçentage*/
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.slide-realisation2>p{
+  padding-top: 10%;
+}
+
+.slide-realisation3 {
+  border: 2px solid #C0C5C1;
+  border-radius: 5px;
+  /* width: 25%; */ /* Commentez ou supprimez cette ligne */
+  /* padding: 1%; */
+  margin: 0.5%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  height: 22%; 
+  width: 20%; /* Ajoutez cette ligne pour définir une largeur en pourçentage*/
+  margin-bottom: 2%;
+  /* margin-top: 2%; */
+}
+
+.slide-realisation4 {
+  border: 2px solid #C0C5C1;
+  border-radius: 5px;
+  /* width: 25%; */ /* Commentez ou supprimez cette ligne */
+  /* padding: 1%; */
+  /* margin: 0.5%; */
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  height: 15%; 
+  width: 20%; /* Ajoutez cette ligne pour définir une largeur en pourçentage*/
+  /* margin-bottom: 2%; */
+  /* margin-top: 2%; */
+}
+
+.slide-power {
+  border: 2px solid #C0C5C1;
+  border-radius: 5px;
+  /* width: 25%; */ /* Commentez ou supprimez cette ligne */
+  padding: 1%;
+  margin: 0.5%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  height: 35%; 
+  width: 20%; /* Ajoutez cette ligne pour définir une largeur en pourçentage*/
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.slide-power>img{
+  width: 50%; 
+  height: auto;
+}
+
+a {
+  color: #C0C5C1; /* Couleur bleue pour les liens non visités */
+}
+
+a:hover {
+  color: red; /* Couleur rouge pour les liens au survol */
+}
+
+@media only screen and (max-width: 768px) {
+  .redmine,
+  .redmine2,
+  .KPI {
+      /* width: 100%; Ajuste la largeur pour les petits écrans */
+      height: auto; /* Permet à la hauteur de s'ajuster au contenu */
+      max-height: 300px; /* Limite la hauteur maximale pour éviter une taille excessive */
+      margin: 20px auto;
+  }
+}
